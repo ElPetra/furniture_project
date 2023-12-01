@@ -24,10 +24,17 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+a:hover {
+  color: #DDD7C0;
+}
+a:active {
+  color: #CBC6B2;
+}
 .container {
   padding: 32px;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .container_header {
   display: flex;
@@ -88,10 +95,9 @@ h1 {
   font-size: 72px;
   line-height: 120%;
   text-transform: uppercase;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #212529;
-  line-height: 120%;
-}
+  }
 .container_about {
   display: flex;
   flex-direction: row;
@@ -146,6 +152,7 @@ h2 {
 }
 .link_order {
   text-decoration: underline;
+  text-underline-offset: 5px;
   font-family: "Roboto";
   font-size: 18px;
   font-style: normal;
@@ -250,7 +257,7 @@ h3 {
   background: lightgray;
   object-fit: cover;
   object-position: center;
-}
+ }
 .projects_up {
   display: flex;
   flex-direction: row;
@@ -295,7 +302,10 @@ input {
   font: 31px;
   border: none;
   border-bottom: 1px #212529 solid;
-}
+  }
+input:focus {
+    outline: 0;
+  }
 .forms_descr {
   margin-top: 32px;
 }
@@ -324,9 +334,16 @@ input {
   line-height: 140%;
   background-color: #212529;
   padding: 12px 24px;
+  cursor: pointer;
 }
 .link_buttons {
   margin-top: 40px;
+}
+.link_buttons:hover {
+  color: #DDD7C0;
+}
+.link_buttons:active {
+  color: #CBC6B2;
 }
 .container_footer {
   display: flex;
